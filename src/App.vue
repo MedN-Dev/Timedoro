@@ -27,6 +27,7 @@
     font-size: 10rem;
     text-align: center;
   }
+ 
   .buttons {
     font-size: 2rem;
     text-align: center;
@@ -42,5 +43,13 @@
   .button:hover {
     background-color: red;
   }
+
+  @media (max-width:499px)
+  {
+    .counter {
+      font-size: 8rem;
+    }
+  }
+
 </style>
 
