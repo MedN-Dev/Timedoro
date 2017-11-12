@@ -20,11 +20,18 @@
 
 </script>
 <style>
-  .main {
-    background-color: red;
+  .pomodoros {
+    padding: 10px;
+  }
+  .pomodoros .tomato {
+    margin: 5px;
   }
   .counter {
     font-size: 10rem;
+    text-align: center;
+  }
+  .msg {
+    font-size: 3rem;
     text-align: center;
   }
  
