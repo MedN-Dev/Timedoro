@@ -11,7 +11,7 @@ const store = new Vuex.Store({
     pomodoros: 0,
     timer: {
       playing: false,
-      pomodoro: 0.05 * 60,
+      pomodoro: 2 * 60,
       short: 0.02 * 60,
       long: 0.03 * 60,
       time: null,

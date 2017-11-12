@@ -1,7 +1,23 @@
 <template>
   <v-flex xs12>
-    <v-card-text class="counter">{{ time }}</v-card-text>
+    <v-card-text class="counter">
+        <v-progress-circular
+          v-bind:size="300"
+          v-bind:width="20"
+          v-bind:rotate="-90"
+          v-bind:value="percent"
+          color="red darken-3">
+      {{ time }}
+    </v-progress-circular>
+    </v-card-text>
     <v-card-text class="msg">{{ msg }}</v-card-text>
+
+    <v-layout row wrap class='pomodoros'>
+      <v-flex xs12>
+        <img src='../assets/tomato.png' v-for='n in pomodoros' class="tomato"/>
+      </v-flex>
+    </v-layout>    
+
     <v-layout row wrap class="buttons">
       <v-flex xs6>
         <v-card dark raised color="green darken-3" class="button">
@@ -14,11 +30,6 @@
         </v-card>
       </v-flex>      
     </v-layout>
-    <v-layout row wrap class='pomodoros'>
-      <v-flex xs12>
-        <img src='../assets/tomato.png' v-for='n in pomodoros' class="tomato"/>
-      </v-flex>
-    </v-layout>    
   </v-flex>  
 </template>
 
@@ -51,6 +62,12 @@ export default {
         return 'Play';
       }
       return 'Pause';
+    },
+    percent() {
+      const percent = Math.ceil(100 - ((100 * this.timer.time) / this.timer[this.stage]));
+
+      if (isNaN(percent)) return 0;
+      return percent;
     },
     msg() {
       if (this.stage === 'short') return 'Short rest';
