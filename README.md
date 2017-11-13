@@ -1,12 +1,8 @@
-# pomodoro
+# Timedoro 🍅
 
-> a pomodoro vue implementation
+A Vue.js app for the Pomodoro Technique, a time management method developed by Francesco Cirillo.
 
-## Icon credits
-
-
-
-
+You can see it live at [timedoro.com](http://timedoro.com)
 
 ## Build Setup
 
@@ -33,4 +29,12 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Built With
+
+* [Vue.js](https://vuejs.org/) - The Progressive JavaScript Framework
+* [Vuetify](https://vuetifyjs.com/) - Material Component Framework
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
