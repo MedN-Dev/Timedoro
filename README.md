@@ -4,8 +4,7 @@
 
 ## Icon credits
 
-Tomato icon made by Freepik from www.flaticon.com 
-https://www.flaticon.com/free-icon/tomato_517556#term=tomato&page=1&position=91
+
 
 
 

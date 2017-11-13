@@ -9,20 +9,22 @@
     </main>
     <v-footer class="footer px-5 py-2" dark color="secondary" fixed>
       <v-spacer></v-spacer>
-      <dialog-screen />
+      <dialog-screen class="px-2" />
+       <settings class="px-2" />
     </v-footer>
   </v-app>
 </template>
 
 <script>
 import dialogScreen from '@/components/Dialog';
+import settings from '@/components/Settings';
 
 export default {
   data() {
     return {
     };
   },
-  components: { dialogScreen },
+  components: { dialogScreen, settings },
 };
 
 </script>
@@ -79,7 +81,7 @@ export default {
     font-size: 1.2rem;
   }
 
-  .dialog a {
+  .dialog a, .dialog strong {
     color: #b2ff59;
   }
 

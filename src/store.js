@@ -11,9 +11,9 @@ const store = new Vuex.Store({
     pomodoros: 0,
     timer: {
       playing: false,
-      pomodoro: 2 * 60,
-      short: 0.02 * 60,
-      long: 0.03 * 60,
+      pomodoro: 25 * 60,
+      short: 5 * 60,
+      long: 10 * 60,
       time: null,
       obj: null,
     },
@@ -27,6 +27,15 @@ const store = new Vuex.Store({
     },
     timer(state) {
       return state.timer;
+    },
+    getPomodoro(state) {
+      return state.timer.pomodoro / 60;
+    },
+    getShort(state) {
+      return state.timer.short / 60;
+    },
+    getLong(state) {
+      return state.timer.long / 60;
     },
     pomodoros(state) {
       return state.pomodoros;
@@ -48,6 +57,13 @@ const store = new Vuex.Store({
     },
   },
   mutations: {
+    setTimes(state, obj) {
+      if (obj.pomodoro !== null) {
+        state.timer.pomodoro = obj.pomodoro * 60;
+      }
+      if (obj.short !== null) state.timer.short = obj.short * 60;
+      if (obj.long !== null) state.timer.long = obj.long * 60;
+    },
     setStage(state, value) {
       state.stage = value;
     },
