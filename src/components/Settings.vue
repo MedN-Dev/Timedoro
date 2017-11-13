@@ -14,7 +14,7 @@
               <v-card color="secondary">     
                 <v-layout row>
                    <v-flex xs4>
-                    <v-subheader dark>Pomodoro lenght</v-subheader>
+                    <v-subheader dark>Pomodoro length</v-subheader>
                   </v-flex>
                   <v-flex xs7>
                     <v-text-field
@@ -30,7 +30,7 @@
                 </v-layout>                 
                 <v-layout row>
                    <v-flex xs4>
-                    <v-subheader dark>Short rest lenght</v-subheader>
+                    <v-subheader dark>Short rest length</v-subheader>
                   </v-flex>
                   <v-flex xs7>
                     <v-text-field
@@ -46,7 +46,7 @@
                 </v-layout>                 
                 <v-layout row>
                    <v-flex xs4>
-                    <v-subheader dark>Long rest lenght</v-subheader>
+                    <v-subheader dark>Long rest length</v-subheader>
                   </v-flex>
                   <v-flex xs7>
                     <v-text-field
